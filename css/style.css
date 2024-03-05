@@ -1,3 +1,31 @@
 * {
   margin: 0;
   padding: 0; }
+
+.header__nav nav div a .logo {
+  width: 250px; }
+
+.header__nav nav div div ul li a:hover {
+  background-color: #1478b288;
+  border-radius: 10%;
+  color: #ffffff; }
+
+.footer section ul {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.footer section li {
+  list-style: none; }
+  .footer section li a img {
+    width: 40px; }
+  .footer section li:hover {
+    background-color: #97adbd;
+    transition: all .3s;
+    border-radius: 50%; }
+
+.footer p {
+  text-align: center;
+  margin: 0; }

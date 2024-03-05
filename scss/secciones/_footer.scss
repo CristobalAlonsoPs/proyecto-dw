@@ -1,0 +1,32 @@
+.footer{
+    section{
+        ul{
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;}  
+            li{
+                list-style: none;
+                a{
+                    img{
+                        width: 40px;
+                    }
+                }
+                &:hover{
+                    background-color: #97adbd;
+                    transition: all .3s;
+                    border-radius: 50%;  
+                }
+            }
+        }
+    p{
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+  
+
+  
