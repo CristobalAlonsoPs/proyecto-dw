@@ -21,11 +21,21 @@
                 align-items: center;
                 grid-area: grilla_art1;
 
-                button {
+                .botonIndex {
                     @extend .boton;
+
+                    a {
+                        text-decoration: none;
+                        color: $azul;
+
+                        &:hover {
+                            color: #FFF;
+                            transition: all .3s;
+                        }
+                    }
                 }
 
-                button:hover {
+                .botonIndex:hover {
                     box-shadow: inset 400px 50px 0 0 #1479b2;
                     color: #ffffff;
                 }
@@ -107,9 +117,11 @@
             font-size: 18px;
             width: 400px;
         }
-       h3{
-        color: black;
-       }
+
+        h3 {
+            color: black;
+        }
+
         img {
             height: 600px;
         }
