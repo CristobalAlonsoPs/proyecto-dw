@@ -1,0 +1,118 @@
+//----seccion 1 index-----
+.main-index {
+    .seccion1_index {
+        background-color: #d9d9d9;
+        padding: 10px;
+
+        .grilla_s1i {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1px 1px;
+            grid-template-areas:
+                "grilla_art1 grilla_art2";
+            align-items: center;
+            justify-items: center;
+
+            .grilla_art1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-area: grilla_art1;
+
+                button {
+                    @extend .boton;
+                }
+
+                button:hover {
+                    box-shadow: inset 400px 50px 0 0 #1479b2;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .grilla_art2 {
+        grid-area: grilla_art2;
+
+        img {
+            width: 600px;
+            border-radius: 3%;
+            margin: 20px;
+
+        }
+
+        h3 {
+            text-align: center;
+            color: #1479b2;
+        }
+    }
+}
+
+//---- seccion 2 index-----
+
+.seccion2_index {
+    background-color: #1479b2;
+    padding: 10px;
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .titulo2 {
+            @extend .titulo;
+        }
+
+        p {
+            color: #ffffff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            max-width: 70%;
+            font-size: 20px;
+
+        }
+    }
+
+    // seccion 2 index articulo 1
+    article {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .ar1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 600px;
+        }
+
+        .p2 {
+            font-size: 18px;
+            width: 400px;
+            text-align: right;
+        }
+    }
+
+    //seccion 2 index articulo 2
+    .ar2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .p3 {
+            font-size: 18px;
+            width: 400px;
+        }
+       h3{
+        color: black;
+       }
+        img {
+            height: 600px;
+        }
+    }
+
+}
