@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<header class="header__nav">
+    <header class="header__nav">
         <!-- Barra de navegacion -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
             <div class="container-fluid bg-white">
@@ -47,35 +47,37 @@
     </header>
 
 
-    <section class="form_contacto">
-        <div class="form_contenedor">
-            <h1 class="form_h3">Habla con nosotros</h1>
-            <input class="control" type="text" name="nombre" placeholder="Nombre">
-            <input class="control" type="email" name="correo" placeholder="Correo Electronico">
-            <textarea class="texto" name="mensaje" cols="30" rows="10" placeholder="Redacta tu mensaje aqui"></textarea>
-            <input class="botonContacto" type="submit" value="Enviar">
-        </div>
-    </section>
-
-    <section class="contactoDireccion">
-        <div class="direccion">
-            <div class="donde">
-                <h2>Donde encontrarnos</h2>
-                <ul>
-                    <li>Av. santa rosa 6435</li>
-                    <li>contacto: +56900000000</li>
-                </ul>
+<main class="main-contacto">
+        <section class="form_contacto">
+            <div class="form_contenedor">
+                <h1 class="form_h1">Habla con nosotros</h1>
+                <input class="control" type="text" name="nombre" placeholder="Nombre">
+                <input class="control" type="email" name="correo" placeholder="Correo Electronico">
+                <textarea class="texto" name="mensaje" cols="30" rows="10" placeholder="Redacta tu mensaje aqui"></textarea>
+                <input class="botonContacto" type="submit" value="Enviar">
             </div>
-            <div class="iframe">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.3020784190685!2d-70.63927652340153!3d-33.519530901054814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da8e2cf12377%3A0x53c7855523ed4094!2sAv.%20Sta.%20Rosa%206435%2C%208860019%20La%20Granja%2C%20San%20Ram%C3%B3n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1706485739889!5m2!1ses-419!2scl"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    
+        <section class="contactoDireccion">
+            <div class="direccion">
+                <div class="donde">
+                    <h2>Donde encontrarnos</h2>
+                    <ul>
+                        <li>Av. santa rosa 6435</li>
+                        <li>contacto: +56900000000</li>
+                    </ul>
+                </div>
+                <div class="iframe">
+                    <iframe class="mapas"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.3020784190685!2d-70.63927652340153!3d-33.519530901054814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da8e2cf12377%3A0x53c7855523ed4094!2sAv.%20Sta.%20Rosa%206435%2C%208860019%20La%20Granja%2C%20San%20Ram%C3%B3n%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1706485739889!5m2!1ses-419!2scl"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+</main>
     <footer class="footer">
-    <!-- Pie de pagina -->
+        <!-- Pie de pagina -->
         <section>
             <ul>
                 <li class="iconFooter"><a href="#"><img src="../recursos/gmail-logo.png" alt="logo gmail"></a></li>

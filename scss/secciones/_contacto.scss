@@ -1,97 +1,97 @@
 /* contacto.html */
-.form_contenedor {
-    width: 100%;
-    display: grid;
-    gap: 1em;
-    grid-auto-columns: 100%;
-}
+//<---- seccion fomulario de contacto----->
+.main-contacto {
+    .form_contacto {
+        width: 450px;
+        height: 400px;
+        margin: auto;
+        padding: 20px 35px;
+        background: #f2f2f2;
+        box-shadow: 10px 13px 27px #97adbd;
 
-.control {
-    text-align: center;
-    font-size: 1.9rem;
-    margin-bottom: 5px;
-}
+        .form_contenedor {
+            width: 100%;
+            display: grid;
+            gap: 1em;
+            grid-auto-columns: 100%;
 
-.control {
+            .form_h1 {
+                @extend .titleForm;
+            }
 
-    font-family: inherit;
-    font-size: 1rem;
-    padding: .7em 1em;
-    outline: none;
-    border: none;
-    border: 1px solid #1479b2;
-    border-radius: 5px;
-}
+            .control {
+                text-align: center;
+                font-size: 1.9rem;
+                margin-bottom: 5px;
+                font-family: inherit;
+                font-size: 1rem;
+                padding: .7em 1em;
+                outline: none;
+                border: none;
+                border: 1px solid #1479b2;
+                border-radius: 5px;
+            }
+
+            .texto {
+                width: 380px;
+                height: 100px;
+                font-family: inherit;
+                font-size: 1rem;
+                padding: .7em 1em;
+                outline: none;
+                border: none;
+                border: 1px solid #1479b2;
+                border-radius: 5px;
+            }
+
+            .botonContacto {
+                font-family: inherit;
+                font-size: 1rem;
+                background-color: #1479b2;
+                color: #FFF;
+                border: none;
+                font-weight: 300;
+                padding: .7em 0;
+                border-radius: .2em;
+                cursor: pointer;
+                font-weight: 400;
+
+                &:hover {
+                    background: cadetblue;
+                }
+            }
+        }
+    }
+
+    //<---- seccion dereccion de contacto----->
+    .contactoDireccion {
+        .direccion {
+            margin: 100px;
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1px 1px;
+            grid-template-areas:
+                "donde iframe";
+            justify-items: center;
+            align-items: center;
+
+            .donde {
+                grid-area: donde;
+            }
+
+            .iframe {
+                grid-area: iframe;
+            }
+
+            .mapas {
+                width: 350px;
+                height: 350px;
+            }
+        }
 
 
-.form_h3 {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: auto;
-    color: #1479b2;
-    margin-top: 10px;
-}
+    }
 
-.form_contacto {
-    width: 450px;
-    height: 400px;
-    margin: auto;
-    padding: 20px 35px;
-    background: #f2f2f2;
-    box-shadow: 10px 13px 27px #97adbd;
-}
-
-.texto {
-    width: 380px;
-    height: 100px;
-    font-family: inherit;
-    font-size: 1rem;
-    padding: .7em 1em;
-    outline: none;
-    border: none;
-    border: 1px solid #1479b2;
-    border-radius: 5px;
-}
-
-.botonContacto {
-    font-family: inherit;
-    font-size: 1rem;
-    background-color: #1479b2;
-    color: #FFF;
-    border: none;
-    font-weight: 300;
-    padding: .7em 0;
-    border-radius: .2em;
-    cursor: pointer;
-    font-weight: 400;
-}
-
-.botonContacto:hover {
-    background: cadetblue;
-}
-
-.direccion {
-    margin: 100px;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-template-areas:
-        "donde iframe";
-    justify-items: center;
-    align-items: center;
-}
-
-.donde {
-    grid-area: donde;
-}
-
-.iframe {
-    grid-area: iframe;
-}
-
-.contactoDireccion .direccion iframe {
-    width: 350px;
-    height: 350px;
 }
