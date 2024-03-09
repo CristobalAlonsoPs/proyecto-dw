@@ -1,0 +1,24 @@
+.main-registro {
+    .form_registro {
+        @extend .formulario;
+
+        .form_contenedor {
+            @extend .formulario_contenedor;
+            .form_h1{
+                @extend .titleForm;
+            }
+            .control{
+                @extend .entradas;
+            }
+
+            .botonRegistro {
+                @extend .botonFormulario;
+            }
+        }
+        .pRegistro{
+            text-align: center;
+
+        }
+    }
+}
+

@@ -2,60 +2,25 @@
 //<---- seccion fomulario de contacto----->
 .main-contacto {
     .form_contacto {
-        width: 450px;
-        height: 400px;
-        margin: auto;
-        padding: 20px 35px;
-        background: #f2f2f2;
-        box-shadow: 10px 13px 27px #97adbd;
+        @extend .formulario;
 
         .form_contenedor {
-            width: 100%;
-            display: grid;
-            gap: 1em;
-            grid-auto-columns: 100%;
+            @extend .formulario_contenedor;
 
             .form_h1 {
                 @extend .titleForm;
             }
 
             .control {
-                text-align: center;
-                font-size: 1.9rem;
-                margin-bottom: 5px;
-                font-family: inherit;
-                font-size: 1rem;
-                padding: .7em 1em;
-                outline: none;
-                border: none;
-                border: 1px solid #1479b2;
-                border-radius: 5px;
+                @extend .entradas;
             }
 
             .texto {
-                width: 380px;
-                height: 100px;
-                font-family: inherit;
-                font-size: 1rem;
-                padding: .7em 1em;
-                outline: none;
-                border: none;
-                border: 1px solid #1479b2;
-                border-radius: 5px;
+                @extend .mensaje;
             }
 
             .botonContacto {
-                font-family: inherit;
-                font-size: 1rem;
-                background-color: #1479b2;
-                color: #FFF;
-                border: none;
-                font-weight: 300;
-                padding: .7em 0;
-                border-radius: .2em;
-                cursor: pointer;
-                font-weight: 400;
-
+                @extend .botonFormulario;
                 &:hover {
                     background: cadetblue;
                 }
@@ -90,8 +55,5 @@
                 height: 350px;
             }
         }
-
-
     }
-
 }
