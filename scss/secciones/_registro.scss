@@ -13,6 +13,9 @@
 
             .botonRegistro {
                 @extend .botonFormulario;
+                &:hover {
+                    background: cadetblue;
+                }
             }
         }
         .pRegistro{

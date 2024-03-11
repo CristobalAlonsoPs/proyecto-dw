@@ -95,7 +95,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        h3{
+
+        h3 {
             color: black;
         }
 
@@ -130,4 +131,39 @@
         }
     }
 
+}
+
+@media (max-width: 600px) {
+    .main-index {
+        .seccion1_index {
+            .grilla_s1i {
+                display: grid;
+                grid-auto-columns: 1fr;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 1px 1px;
+                grid-template-areas:
+                    "grilla_art1"
+                    "grilla_art2"
+                ;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .grilla_art1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-area: grilla_art1;
+                h1{
+                    text-align: center;
+                    color: #1479b2;
+                }
+            }
+
+            .grilla_art2 {
+                grid-area: grilla_art2;
+            }
+        }
+    }
 }

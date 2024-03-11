@@ -1,0 +1,29 @@
+.main-login {
+    .form_login {
+        @extend .formulario;
+
+        .form_contenedor {
+            @extend .formulario_contenedor;
+
+            .form_h1 {
+                @extend .titleForm;
+            }
+
+            .control {
+                @extend .entradas;
+            }
+
+            .botonLogin {
+                @extend .botonFormulario;
+                &:hover {
+                    background: cadetblue;
+                }
+            }
+        }
+
+        .aLogin {
+            text-align: center;
+
+        }
+    }
+}
