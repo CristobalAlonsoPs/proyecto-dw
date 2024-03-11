@@ -1,6 +1,8 @@
 //----seccion 1 index-----
 .main-index {
     .seccion1_index {
+        animation-name: aparecer2;
+        animation-duration: 2s;
         background-color: #d9d9d9;
         padding: 10px;
 
@@ -63,7 +65,9 @@
 //---- seccion 2 index-----
 
 .seccion2_index {
-    background-color: #1479b2;
+    animation-name: aparecer2;
+    animation-duration: 2s;
+    background-color: $azul;
     padding: 10px;
 
     .container1 {

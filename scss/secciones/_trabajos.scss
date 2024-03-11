@@ -26,6 +26,8 @@
 
     //seccion 2 trabajos
     .seccion2_trabajos {
+        animation-name: aparecer2;
+        animation-duration: 2s;
         display: flex;
         flex-direction: column;
         align-items: center;

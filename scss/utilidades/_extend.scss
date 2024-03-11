@@ -1,5 +1,5 @@
 .boton {
-    color: #FFF;
+    color: $blanco;
     border: 2px solid $azul;
     border-radius: 0px;
     padding: 18px 36px;
@@ -25,7 +25,7 @@
     text-align: center;
     font-size: 25px;
     margin-bottom: auto;
-    color: #1479b2;
+    color: $azul;
     margin-top: 10px;
 }
 
@@ -54,7 +54,7 @@
     padding: .7em 1em;
     outline: none;
     border: none;
-    border: 1px solid #1479b2;
+    border: 1px solid $azul;
     border-radius: 5px;
 }
 
@@ -66,7 +66,7 @@
     padding: .7em 1em;
     outline: none;
     border: none;
-    border: 1px solid #1479b2;
+    border: 1px solid $azul;
     border-radius: 5px;
 }
 
@@ -74,8 +74,8 @@
 .botonFormulario {
     font-family: inherit;
     font-size: 1rem;
-    background-color: #1479b2;
-    color: #FFF;
+    background-color: $azul;
+    color: $blanco;
     border: none;
     font-weight: 300;
     padding: .7em 0;
@@ -85,4 +85,9 @@
 }
 .paddingMio {
     padding-top: 380px;
+}
+
+.focusForm{
+    background-color: $input;
+    transform: scale(1.05);
 }

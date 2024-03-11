@@ -1,5 +1,7 @@
 .main-registro {
     .form_registro {
+        animation-name: aparecer;
+        animation-duration: 2s;
         @extend .formulario;
 
         .form_contenedor {
@@ -9,6 +11,9 @@
             }
             .control{
                 @extend .entradas;
+                &:focus{
+                    @extend .focusForm;
+                }
             }
 
             .botonRegistro {

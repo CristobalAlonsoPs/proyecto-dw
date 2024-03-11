@@ -19,7 +19,7 @@ h3 {
   text-align: center; }
 
 .boton, .main-index .seccion1_index .grilla_s1i .grilla_art1 .botonIndex {
-  color: #FFF;
+  color: #ffffff;
   border: 2px solid #1479b2;
   border-radius: 0px;
   padding: 18px 36px;
@@ -86,7 +86,7 @@ h3 {
   font-family: inherit;
   font-size: 1rem;
   background-color: #1479b2;
-  color: #FFF;
+  color: #ffffff;
   border: none;
   font-weight: 300;
   padding: .7em 0;
@@ -97,6 +97,24 @@ h3 {
 .paddingMio {
   padding-top: 380px; }
 
+.focusForm, .main-contacto .form_contacto .form_contenedor .control:focus, .main-registro .form_registro .form_contenedor .control:focus, .main-login .form_login .form_contenedor .control:focus {
+  background-color: #e0effa;
+  transform: scale(1.05); }
+
+@keyframes aparecer {
+  0% {
+    transform: scale(0.3); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes aparecer2 {
+  0% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+
 .header__nav nav div a .logo {
   width: 250px; }
 
@@ -106,6 +124,8 @@ h3 {
   color: #ffffff; }
 
 .main-index .seccion1_index {
+  animation-name: aparecer2;
+  animation-duration: 2s;
   background-color: #d9d9d9;
   padding: 10px; }
   .main-index .seccion1_index .grilla_s1i {
@@ -143,6 +163,8 @@ h3 {
     color: #1479b2; }
 
 .seccion2_index {
+  animation-name: aparecer2;
+  animation-duration: 2s;
   background-color: #1479b2;
   padding: 10px; }
   .seccion2_index .container1 {
@@ -222,6 +244,8 @@ h3 {
     padding: 10px; }
 
 .main-trabajos .seccion2_trabajos {
+  animation-name: aparecer2;
+  animation-duration: 2s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,8 +306,13 @@ h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 /* contacto.html */
-.main-contacto .form_contacto .form_contenedor .botonContacto:hover {
-  background: cadetblue; }
+.main-contacto .form_contacto {
+  animation-name: aparecer;
+  animation-duration: 2s; }
+  .main-contacto .form_contacto .form_contenedor .texto:focus {
+    transform: scale(1.05); }
+  .main-contacto .form_contacto .form_contenedor .botonContacto:hover {
+    background: cadetblue; }
 
 .main-contacto .contactoDireccion .direccion {
   margin: 100px;
@@ -303,17 +332,21 @@ h3 {
     width: 350px;
     height: 350px; }
 
-.main-registro .form_registro .form_contenedor .botonRegistro:hover {
-  background: cadetblue; }
+.main-registro .form_registro {
+  animation-name: aparecer;
+  animation-duration: 2s; }
+  .main-registro .form_registro .form_contenedor .botonRegistro:hover {
+    background: cadetblue; }
+  .main-registro .form_registro .pRegistro {
+    text-align: center; }
 
-.main-registro .form_registro .pRegistro {
-  text-align: center; }
-
-.main-login .form_login .form_contenedor .botonLogin:hover {
-  background: cadetblue; }
-
-.main-login .form_login .aLogin {
-  text-align: center; }
+.main-login .form_login {
+  animation-name: aparecer;
+  animation-duration: 2s; }
+  .main-login .form_login .form_contenedor .botonLogin:hover {
+    background: cadetblue; }
+  .main-login .form_login .aLogin {
+    text-align: center; }
 
 .footer ul {
   margin: 0;

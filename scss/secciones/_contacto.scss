@@ -2,6 +2,8 @@
 //<---- seccion fomulario de contacto----->
 .main-contacto {
     .form_contacto {
+        animation-name: aparecer;
+        animation-duration: 2s;
         @extend .formulario;
 
         .form_contenedor {
@@ -13,14 +15,24 @@
 
             .control {
                 @extend .entradas;
+
+                &:focus {
+                    @extend .focusForm;
+                }
             }
 
             .texto {
                 @extend .mensaje;
+
+                &:focus {
+                    transform: scale(1.05);
+
+                }
             }
 
             .botonContacto {
                 @extend .botonFormulario;
+
                 &:hover {
                     background: cadetblue;
                 }
