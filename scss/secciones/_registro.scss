@@ -30,3 +30,20 @@
     }
 }
 
+@media(max-width:600px){
+    .main-registro{
+        margin-top: 70px;
+        .form_registro{
+            width: 350px;
+            height: auto;
+        }
+        .form_contenedor {
+            .texto {
+                width: 280px; 
+            }
+        }
+    }
+    .paddingMio{
+        padding-top: 200px;
+    }
+}

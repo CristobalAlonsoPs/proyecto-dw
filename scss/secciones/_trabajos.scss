@@ -42,6 +42,7 @@
         .grid_s2t {
             display: grid;
             height: 550px;
+            justify-content: center;
             grid-template-areas:
                 "img1 img1 img2 img3"
                 "img1 img1 img4 img5";
@@ -117,3 +118,99 @@
 
 }
 
+@media (max-width: 930px) {
+    .main-trabajos {
+        .seccion1_trabajos {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                width: 500px;
+            }
+        }
+
+        .seccion2_trabajos {
+            .grid_s2t {
+                display: grid;
+                height: 700px;
+                justify-content: center;
+                grid-template-areas:
+                    "img1 img1"
+                    "img2 img3"
+                    "img4 img5";
+                gap: 10px;
+            }
+
+            .art_img:nth-of-type(1) {
+                grid-area: img1;
+            }
+
+            .art_img:nth-of-type(2) {
+                grid-area: img2;
+            }
+
+            .art_img:nth-of-type(3) {
+                grid-area: img3;
+            }
+
+            .art_img:nth-of-type(4) {
+                grid-area: img4;
+            }
+
+            .art_img:nth-of-type(5) {
+                grid-area: img5;
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    .main-trabajos{
+        .seccion1_trabajos{
+
+            .pa1{
+                width: 370px;
+            }
+        }
+        .seccion2_trabajos{
+            .grid_s2t {
+                display: grid;
+                height: 700px;
+                justify-content: center;
+                grid-template-areas:
+                    "img1"
+                    "img1"
+                    "img2"
+                    "img2"
+                    "img3"
+                    "img4"
+                    "img4"
+                    "img5";
+                gap: 10px;
+                .hover1{
+                    font-size: small;
+                }
+            }
+
+            .art_img:nth-of-type(1) {
+                grid-area: img1;
+            }
+
+            .art_img:nth-of-type(2) {
+                grid-area: img2;
+            }
+
+            .art_img:nth-of-type(3) {
+                grid-area: img3;
+            }
+
+            .art_img:nth-of-type(4) {
+                grid-area: img4;
+            }
+
+            .art_img:nth-of-type(5) {
+                grid-area: img5;
+            }
+        }
+    }
+}

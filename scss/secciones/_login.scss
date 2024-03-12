@@ -13,13 +13,15 @@
 
             .control {
                 @extend .entradas;
-                &:focus{
+
+                &:focus {
                     @extend .focusForm;
                 }
             }
 
             .botonLogin {
                 @extend .botonFormulario;
+
                 &:hover {
                     background: cadetblue;
                 }
@@ -29,6 +31,23 @@
         .aLogin {
             text-align: center;
 
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .main-login {
+        margin-top: 70px;
+
+        .form_login {
+            width: 350px;
+            height: auto;
+        }
+
+        .form_contenedor {
+            .texto {
+                width: 280px;
+            }
         }
     }
 }

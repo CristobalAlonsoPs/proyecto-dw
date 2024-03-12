@@ -69,3 +69,48 @@
         }
     }
 }
+
+@media(max-width:930px) {
+    .main-contacto {
+        .form_contacto {
+            width: 350px;
+            height: auto;
+
+            .form_contenedor {
+                .texto {
+                    width: 280px;
+                }
+            }
+        }
+        .contactoDireccion {
+            .direccion {
+                margin: 100px;
+                display: grid;
+                grid-auto-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 1px 1px;
+                grid-template-areas:
+                    "donde" 
+                    "iframe";
+                justify-items: center;
+                align-items: center;
+                justify-content: center;
+    
+                .donde {
+                    grid-area: donde;
+                }
+    
+                .iframe {
+                    grid-area: iframe;
+                }
+    
+                .mapas {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+
+    }
+}
